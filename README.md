@@ -4,7 +4,22 @@ A new Flutter project.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+### Code Generation
+
+Generated files (`*.freezed.dart`, `*.g.dart`, `*.gen.dart`) are excluded from git and must be generated before running or testing the app:
+
+```sh
+flutter pub get
+dart run build_runner build
+```
+
+For continuous regeneration during development:
+
+```sh
+dart run build_runner watch
+```
+
+### Flutter Resources
 
 A few resources to get you started if this is your first Flutter project:
 
